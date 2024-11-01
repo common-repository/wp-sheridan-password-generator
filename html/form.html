@@ -1,0 +1,48 @@
+		<form id="frmPasswordGenerator" method="post" action="SHERIDAN_FORM_URL">
+			<fieldset>
+				<legend>Secure Random Password Generator</legend>
+				<ul style="list-style: none">
+					<li>
+						<label for="length">Password length:</label>
+					<input id="length" name="length" value="9" type="text" />
+						(max length 64 chars)
+					<li>
+						<label for="phonetics">Show phonetics:</label>
+						<input id="phonetics" name="phonetics"  value="on" type="checkbox" checked="checked" />
+						(e.g. alpha - bravo - charlie)
+					</li>
+					<li>
+						<label for="lowercase">Include lowercase letters:</label>
+						<input id="lowercase" name="lowercase" value="on" type="checkbox" checked="checked" />
+						(e.g. abcdef)
+					</li>
+					<li>
+						<label for="uppercase">include uppercase letters:</label>
+						<input id="uppercase" name="uppercase" value="on" type="checkbox" checked="checked" />
+						(e.g. abCdEf)
+					</li>
+					<li>
+						<label for="numerics">include numbers:</label>
+						<input id="numerics" name="numerics" value="on" type="checkbox" checked="checked" />
+						(e.g. ab12c3)
+					</li>
+					<li>
+						<label for="specialchars">Include special characters:</label>
+						<input id="specialchars" name="specialchars" value="on" type="checkbox"  />
+						(e.g. ab_c*d)
+					</li>
+					<li>
+						<label for="similar">Exclude similar characters:</label>
+						<input id="similar" name="similar" value="0" type="checkbox" />
+						(e.g. i,l,o,0,1)
+					</li>
+					<li>
+						<label for="quantity">Quantity:</label>
+						<input id="quantity" name="quantity" value="10" type="text" />
+					</li>
+					<li>
+						<input type="submit" name="submit" value="Generate Passwords" />
+					</li>
+				</ul>
+			</fieldset>
+		</form>
